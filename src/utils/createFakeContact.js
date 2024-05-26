@@ -6,5 +6,3 @@ export const createFakeContact = () => ({
   email: faker.internet.email(),
   job: faker.person.jobTitle(),
 });
-
-// console.log(createFakeContact());
