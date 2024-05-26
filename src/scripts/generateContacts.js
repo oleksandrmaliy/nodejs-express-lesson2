@@ -27,4 +27,4 @@ const generateContacts = async (number) => {
   }
 };
 
-await generateContacts(2);
+await generateContacts(5);
