@@ -13,7 +13,6 @@ export const initMongoDB = async () => {
 
     await mongoose.connect(
       `mongodb+srv://${user}:${pwd}@${url}/${db}?retryWrites=true&w=majority&appName=ClasterOVM`,
-      // 'mongodb+srv://avmaliy:mdbovm@clasterovm.6vfkq9m.mongodb.net/?retryWrites=true&w=majority&appName=ClasterOVM',
     );
     console.log('Mongo connection successfully established!');
   } catch (e) {
