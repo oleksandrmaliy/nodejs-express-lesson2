@@ -1,6 +1,3 @@
-// src/db/models/student.js
-
-// import { Schema } from 'mongoose';
 import { model, Schema } from 'mongoose';
 
 const studentsSchema = new Schema(
@@ -27,6 +24,7 @@ const studentsSchema = new Schema(
       required: true,
       default: false,
     },
+    parentId: { type: Schema.Types.ObjectId, ref: 'users' },  // нова властивість
   },
   {
     timestamps: true,
