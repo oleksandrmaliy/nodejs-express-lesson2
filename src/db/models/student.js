@@ -24,7 +24,10 @@ const studentsSchema = new Schema(
       required: true,
       default: false,
     },
-    parentId: { type: Schema.Types.ObjectId, ref: 'users' },  // нова властивість
+    parentId: { type: Schema.Types.ObjectId, ref: 'users' }, // нова властивість
+    photo: {
+      type: String,
+    },
   },
   {
     timestamps: true,
